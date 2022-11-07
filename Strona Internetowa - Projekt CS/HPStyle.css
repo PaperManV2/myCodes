@@ -1,0 +1,159 @@
+body {
+  background-color: rgb(49, 49, 49);
+  margin: 0;
+}
+.photoPageStability {
+  display: flex;
+  justify-content: center;
+}
+
+.positionOfPhoto_1 {
+  box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.45);
+  position: absolute;
+  left: 94px;
+}
+.positionOfPhoto_2 {
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.45);
+  position: absolute;
+  right: 100px;
+}
+.mainGif {
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.45);
+  position: relative;
+}
+.photoPageRearingment {
+  padding-top: 80px;
+}
+
+.title-Bc {
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.45);
+  background-color: rgb(25, 25, 25);
+  width: 900px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.title-Bc2 {
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.45);
+  background-color: rgb(25, 25, 25);
+  width: 1400px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.color-of-header {
+  color: brown;
+  font-family: "Press Start 2P", cursive;
+  font-size: 60px;
+}
+.case-1 {
+  padding-left: 490px;
+  height: 200px;
+  width: 900px;
+  display: flex;
+}
+.case-4 {
+  padding-left: 230px;
+  height: 250px;
+  width: 1400px;
+  display: flex;
+}
+.logo {
+  margin-top: 90px;
+  margin-left: 120px;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.7);
+  width: 300px;
+}
+.case-2 {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 53px;
+  margin-top: -275px;
+  margin-left: 450px;
+  width: 1450px;
+  height: 300px;
+}
+.gallery {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.7);
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+  border: 0px;
+}
+
+.case-3 {
+  display: inline-flex;
+  flex-direction: row;
+  margin-inline: 136px;
+}
+.gallery::before,
+.gallery::after {
+  --scale: 0;
+
+  position: absolute;
+  top: -0.25rem;
+  left: 50%;
+  transform: translateX(-50%) scale(var(--scale));
+  transition: 150ms;
+  transform-origin: top center;
+}
+.gallery::before {
+  content: attr(data-tooltip);
+  color: black;
+  width: max-content;
+  max-width: 100%;
+  border-radius: 25px;
+  padding: 0.5rem;
+  background: white;
+  text-align: center;
+}
+.gallery:hover::before,
+.gallery:hover::after {
+  --scale: 1;
+}
+.gallery::after {
+  content: "";
+  border: 12px solid transparent;
+  border-top-color: black;
+}
+.galleryItem {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+.gallery-Wiktor {
+  background-image: url("https://cdn.discordapp.com/attachments/1036306848581685279/1038963907378815126/Scripcior_2.png");
+}
+.gallery-Mychu {
+  background-image: url("https://cdn.discordapp.com/attachments/1036306848581685279/1038961961699909642/Mychu_1.png");
+}
+.gallery-Asterfern {
+  background-image: url("https://cdn.discordapp.com/attachments/1036306848581685279/1038959777025368114/asterfern_1.png");
+}
+.gallery-Plantujący {
+  background-image: url("https://cdn.discordapp.com/attachments/1036306848581685279/1038217486795022436/Iglesjas_1.png");
+}
+.gallery-Aufanis {
+  background-image: url("https://cdn.discordapp.com/attachments/1036306848581685279/1038961663623299142/aufanis_1.png");
+}
+.gallery-Kadet232 {
+  background-image: url("https://cdn.discordapp.com/attachments/1036306848581685279/1038961088219336724/Kadet_1.png");
+}
+.gallery-PaperMan {
+  background-image: url("https://cdn.discordapp.com/attachments/1036306848581685279/1038959378679734343/PaperMan_1.png");
+}
+.gallery-Stachu-Johnes {
+  background-image: url("https://cdn.discordapp.com/attachments/1036306848581685279/1038218017533862001/Stachu_Jones_1.png");
+}
+.gallery-Hegemon {
+  background-image: url("https://cdn.discordapp.com/attachments/1036306848581685279/1038213504576016515/dews_6.png");
+}
+.gallery-Wlack {
+  background-image: url("https://cdn.discordapp.com/attachments/1036306848581685279/1038217640809857044/Borys_1.png");
+}
