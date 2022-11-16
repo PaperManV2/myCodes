@@ -1,0 +1,91 @@
+:root {
+  --Background: conic-gradient(from 45deg, red, yellow, green, blue, red);
+  --height: 300px;
+  --width: 300px;
+  --box-shadow: 250px 25px 6px -10px rgba(0, 0, 0, 0.45);
+  --position: absolute;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.square-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto;
+  background-color: rgba(255, 230, 0, 0.877);
+  height: 100vh;
+  width: 100vw;
+}
+.square {
+  transform: rotateX(-30deg) rotateY(0deg);
+  transform-style: preserve-3d;
+  position: relative;
+}
+.square1 {
+  border: 1px solid black;
+  background-image: var(--Background);
+  height: var(--height);
+  width: var(--width);
+
+  position: var(--position);
+}
+.square2 {
+  border: 1px solid black;
+  background-image: var(--Background);
+  height: var(--height);
+  width: var(--width);
+
+  transform: translateX(50%) translateZ(150px) rotateY(90deg);
+  position: var(--position);
+}
+.square3 {
+  border: 1px solid black;
+  background-image: var(--Background);
+  height: var(--height);
+  width: var(--width);
+
+  transform: translateX(-50%) translateZ(150px) rotateY(90deg);
+  position: var(--position);
+}
+.square4 {
+  border: 1px solid black;
+  background-image: var(--Background);
+  height: var(--height);
+  width: var(--width);
+
+  transform: translateX(0) translateZ(300px) rotateY(0deg);
+  position: var(--position);
+}
+.square5 {
+  border: 1px solid black;
+  background-image: var(--Background);
+  height: var(--height);
+  width: var(--width);
+
+  transform: translateY(50%) translateZ(150px) rotateX(90deg);
+  position: var(--position);
+}
+.square6 {
+  border: 1px solid black;
+  background-image: var(--Background);
+  height: var(--height);
+  width: var(--width);
+
+  transform: translateY(-50%) translateZ(150px) rotateX(90deg) rotateY(0deg);
+}
+
+@keyframes loop {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.square {
+  animation: loop 5s linear infinite;
+}
